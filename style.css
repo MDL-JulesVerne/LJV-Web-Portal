@@ -16,13 +16,13 @@ hr { border-color:#ddd }
 @media (min-width: 768px) { /* SM, MD, LG Sized Screens */
 	#main .list { box-shadow: 0 0 20px 2px #bbb }
 }
-#main .item { background-size: cover; background-position: center center; background-repeat: no-repeat; height: 200px }
+#main .item { background-size: cover; background-position: center center; background-repeat: no-repeat; height: 200px; border-top: 1px solid rgba(0, 0, 0, .4); border-bottom: 1px solid rgba(0, 0, 0, .3) }
 #main .item:not(#redirect) { cursor: pointer }
 #main .item.small { height: 80px }
 #main .item .content { position: relative; padding: 10px; top: 50%; left: 50%; float: left; text-align: center; color: #fff; transform: translate(-50%, -50%) }
 #main .item .content.text-white { color: #fff; }
-#main .item:not(:last-child) { border-bottom: 1px solid #333 }
-#main .item:not(:first-child) { border-top: 1px solid #333 }
+/* #main .item:not(:last-child) { border-bottom: 1px solid #333 } */
+/* #main .item:not(:first-child) { border-top: 1px solid #333 } */
 #main .item h1 { font-size: 30px; margin: 10px 0 }
 #main .item p { font-size: 15px; margin: 5px 0 }
 #main .item .popup { position: relative; top: 10px; left: 50%; float: left; text-align: center; color: #fff; transform: translate(-10px, -50%) }

@@ -39,12 +39,12 @@ $cookieName = 'disableRedirect';
 			<div class="item selected" href="<?=$url?>" style="background-image: url('blurred-city.jpg')">
 				<div class="content">
 					<h1>Lycée Jules Verne</h1>
-					<p>Le site internet officiel du lycée Jules Verne de Nantes (e-lyco.fr)</p>
+					<p>Le site internet officiel du lycée Jules Verne de Nantes</p>
 				</div>
 			</div>
 			
 			<?php $url = 'http://nautilus.ljv.fr/'; ?>
-			<div class="item" href="<?=$url?>" style="background-image: url('blurred-lights.jpg')">
+			<div class="item" href="<?=$url?>" style="background-image: url('blurred-nautilus.jpg')">
 				<div class="content">
 					<h1>Le Nautilus</h1>
 					<p>Le journal lycéen du lycée Jules Verne</p>
