@@ -1,3 +1,9 @@
+<?php
+$countdown = 3; // seconds
+$location = 'http://jules-verne.paysdelaloire.e-lyco.fr/';
+// header('Refresh: ' . $countdown . '; Url=' . $location);
+?>
+
 <html>
 <head>
 
@@ -8,7 +14,7 @@
 <meta name="keywords" content="portail,portal,web,internet,lycée,high,school,jules,verne,Matiboux" />
 
 <link rel="stylesheet" type="text/css" href="http://cdn.matiboux.com/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="_old-style.css" />
 
 <title>Portail web du Lycée Jules Verne</title>
 
@@ -18,16 +24,16 @@
 <div id="main">
 	<div class="container">
 		<ul class="nav-info">
-			<li><a href="index.php"><i class="fa fa-home fa-fw"></i> Portail ljv.fr</a></li>
+			<li><a href="_old-index.php"><i class="fa fa-home fa-fw"></i> Portail ljv.fr</a></li>
 		</ul>
 		<h1><i class="fa fa-globe fa-fw"></i> Portail web non officiel du Lycée Jules Verne</h1>
 		
 		<div class="col-sm-12">
 			<div class="box box-primary">
-				<h2 id="redirect-message"><i class="fa fa-refresh fa-spin fa-fw"></i> Redirection vers E-lyco.fr dans <span id="countdown">3</span> secondes.</h2>
+				<h2 id="redirect-message"><i class="fa fa-refresh fa-spin fa-fw"></i> Redirection vers E-lyco.fr dans <span id="countdown"><?=$countdown?></span> secondes.</h2>
 				<p>
 					Cette page devrait bientôt vous rediriger vers le site internet officiel du Lycée Jules Verne. <br />
-					Attendez la fin du compte à rebours ou <a href="http://jules-verne.paysdelaloire.e-lyco.fr/">rendez-vous imédiatement sur http://jules-verne.paysdelaloire.e-lyco.fr/</a>.
+					Attendez la fin du compte à rebours ou <a href="<?=$location?>">rendez-vous imédiatement sur <?=$location?></a>.
 				</p>
 				<p>
 					Si vous ne souhaitez aller sur ce lien, cliquer ici : 
@@ -47,7 +53,7 @@
 <div id="footer">
 	<div class="container">
 		<ul class="menu">
-			<li><a href="about.php" id="next"><i class="fa fa-info fa-fw"></i> En savoir plus sur ljv.fr</a></li>
+			<li><a href="_old-about.php" id="next"><i class="fa fa-info fa-fw"></i> En savoir plus sur ljv.fr</a></li>
 			<li><a href="mailto:matiboux@gmail.com" id="next"><i class="fa fa-envelope fa-fw"></i> Contacter le webmaster</a></li>
 			<li><i class="fa fa-copyright fa-fw"></i> Matiboux 2017</li>
 		</ul>
@@ -68,7 +74,7 @@
 	$('#countdown').countdown((new Date).getTime() + (countdown * 1000), function(e) {
 		if(ongoing) {
 			$(this).text(e.strftime('%S'));
-			if(e.type == 'finish') window.location = 'http://jules-verne.paysdelaloire.e-lyco.fr/';
+			if(e.type == 'finish') window.location = '<?=$location?>';
 		}
 	});
 	
