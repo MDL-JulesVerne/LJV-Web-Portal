@@ -1,4 +1,4 @@
-# LJV Web Portal ([ljv.fr](http://ljv.fr/))
+# LJV Web Portal ([ljv.fr](http://ljv.fr/)) – v1.0 (UI v1)
 
 The **LJV Web Portal** is an *unofficial project* made for the Jules Verne High School (Nantes, France). The project's source code is *free to use* and *released under the MIT license*.
 
@@ -13,8 +13,7 @@ This license applies to all files in this repository.
 
 ### LJV.fr Team
 
-Creator, Web Developer, Web Designer, Webmaster: Mathieu Guérin (aka "Matiboux")  
-Contact Infos:
+Creator, Web Developer, Web Designer, Webmaster: **Mathieu Guérin (aka "Matiboux")**
  - **Email**: [matiboux@gmail.com](mailto:matiboux@gmail.com)
  - **Twitter**: [@Matiboux](http://twitter.com/Matiboux)
  - **Telegram**: [@Matiboux](https://t.me/Matiboux)
