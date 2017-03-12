@@ -101,7 +101,7 @@ $cookieName = 'disableRedirect';
 			
 			if(ongoing && $(this).parents('#redirect').find('#countdown').length) {
 				disableRedirect();
-				$.cookie(cookieName, true); alert();
+				$.cookie(cookieName, true);
 			}
 		}
 	});
