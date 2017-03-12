@@ -77,7 +77,7 @@ $cookieName = 'disableRedirect';
 		if(activate) {
 			ongoing = true;
 			$('#redirect').css({'margin-top': 0});
-			$('#redirect-status').removeClass('canceled ongoing').addClass('ongoing').empty().text('Redirection en cours...').show();
+			$('#redirect-status').removeClass('canceled ongoing').addClass('ongoing').empty().text('Redirection auto. en cours...').show();
 			$('#countdown').countdown((new Date).getTime() + (countdown * 1000), function(e) {
 				if(ongoing) {
 					$(this).text(e.strftime('%S'));
@@ -90,36 +90,38 @@ $cookieName = 'disableRedirect';
 		}
 		else {
 			$('#redirect').css({'margin-top': '-80px'});
-			$('#redirect-status').removeClass('canceled ongoing').empty().text('Redirection désactivée').show();
+			$('#redirect-status').removeClass('canceled ongoing').empty().text('Redirection auto. désactivée').show();
 		}
 	};
 	var disableRedirect = function() {
 		ongoing = false;
 		$('#redirect .content').empty().append($('<p>').append($('<i>').addClass('fa fa-times fa-fw'), ' Redirection automatique désactivée'));
 		$('#redirect').animate({'margin-top': '-80px'});
-		if($('#redirect-status').hasClass('ongoing')) $('#redirect-status').removeClass('canceled ongoing').addClass('canceled').empty().text('Redirection annulée');
+		if($('#redirect-status').hasClass('ongoing')) $('#redirect-status').removeClass('canceled ongoing').addClass('canceled').empty().text('Redirection auto. annulée');
 	};
 	
 	toggleRedirect(!$.cookie(cookieName));
 	
-	$('a').click(function(e) {
-		if($(this).attr('href') == '#' && $(this).parents('#redirect').length) {
-			e.preventDefault();
-			
-			if(ongoing && $(this).parents('#redirect').find('#countdown').length) {
-				disableRedirect();
-				$.cookie(cookieName, true);
+	$(document).ready(function() {
+		$('a').click(function(e) {
+			if($(this).attr('href') == '#' && $(this).parents('#redirect').length) {
+				e.preventDefault();
+				
+				if(ongoing && $(this).parents('#redirect').find('#countdown').length) {
+					disableRedirect();
+					$.cookie(cookieName, true);
+				}
 			}
-		}
-	});
-	
-	$('.item').click(function(e) {
-		if($(this).attr('href') != '' && $(this).attr('href') != '#' && $(this).attr('id') != 'redirect') {
-			e.preventDefault();
-			disableRedirect();
-			window.location = $(this).attr('href');
-		}
-	});
+		});
+		
+		$('.item').click(function(e) {
+			if($(this).attr('href') != '' && $(this).attr('href') != '#' && $(this).attr('id') != 'redirect') {
+				e.preventDefault();
+				disableRedirect();
+				window.location = $(this).attr('href');
+			}
+		});
+   });
 })(jQuery);
 </script>
 
