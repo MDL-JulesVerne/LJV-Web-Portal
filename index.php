@@ -97,7 +97,7 @@ $cookieName = 'disableRedirect';
 		ongoing = false;
 		$('#redirect .content').empty().append($('<p>').append($('<i>').addClass('fa fa-times fa-fw'), ' Redirection automatique désactivée'));
 		$('#redirect').animate({'margin-top': '-80px'});
-		$('#redirect-status').removeClass('canceled ongoing').addClass('canceled').empty().text('Redirection annulée');
+		if($('#redirect-status').hasClass('ongoing')) $('#redirect-status').removeClass('canceled ongoing').addClass('canceled').empty().text('Redirection annulée');
 	};
 	
 	toggleRedirect(!$.cookie(cookieName));
