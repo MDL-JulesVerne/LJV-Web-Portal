@@ -28,7 +28,7 @@ $cookieName = 'disableRedirect';
 <div id="items">
 	<div class="container">
 		<div class="list">
-			<div id="redirect" class="item small" style="background: #333; display: none">
+			<div id="redirect" class="item" style="margin-top: -80px">
 				<div class="content">
 					<p>Redirection automatique dans <span id="countdown"><?=$countdown?></span> secondes...</p>
 					<p><a href="#" class="btn btn-danger btn-xs"><i class="fa fa-times fa-fw"></i> Désactiver la redirection</a></p>
@@ -37,6 +37,7 @@ $cookieName = 'disableRedirect';
 			
 			<?php $url = 'http://jules-verne.paysdelaloire.e-lyco.fr/'; ?>
 			<div class="item selected" href="<?=$url?>" style="background-image: url('blurred-ljv.jpg')">
+				<div id="redirect-status" class="popup ongoing" style="display: none"></div>
 				<div class="content">
 					<h1>Lycée Jules Verne</h1>
 					<p>Le site internet officiel du lycée Jules Verne de Nantes</p>
@@ -75,7 +76,8 @@ $cookieName = 'disableRedirect';
 	var toggleRedirect = function(activate) {
 		if(activate) {
 			ongoing = true;
-			$('#redirect').show();
+			$('#redirect').css({'margin-top': 0});
+			$('#redirect-status').removeClass('canceled ongoing').addClass('ongoing').empty().text('Redirection en cours...').show();
 			$('#countdown').countdown((new Date).getTime() + (countdown * 1000), function(e) {
 				if(ongoing) {
 					$(this).text(e.strftime('%S'));
@@ -86,11 +88,16 @@ $cookieName = 'disableRedirect';
 				}
 			});
 		}
-		else $('#redirect').hide();
+		else {
+			$('#redirect').css({'margin-top': '-80px'});
+			$('#redirect-status').removeClass('canceled ongoing').empty().text('Redirection désactivée').show();
+		}
 	};
 	var disableRedirect = function() {
 		ongoing = false;
 		$('#redirect .content').empty().append($('<p>').append($('<i>').addClass('fa fa-times fa-fw'), ' Redirection automatique désactivée'));
+		$('#redirect').animate({'margin-top': '-80px'});
+		$('#redirect-status').removeClass('canceled ongoing').addClass('canceled').empty().text('Redirection annulée');
 	};
 	
 	toggleRedirect(!$.cookie(cookieName));
