@@ -4,7 +4,8 @@ hr { border-color:#ddd }
 
 .container { max-width: 750px; }
 
-#items, #main { margin: 0; padding: 0 }
+#items { margin: 0 }
+#main { margin: 20px 0 }
 @media (max-width: 767px) { /* XS Sized Screens */
 	#items .container { padding: 0 }
 }
