@@ -28,7 +28,7 @@ $cookieName = 'disableRedirect';
 <div id="items">
 	<div class="container">
 		<div class="list">
-			<div id="redirect" class="item small" style="background: #555; display: none">
+			<div id="redirect" class="item small" style="background: #333; display: none">
 				<div class="content">
 					<p>Redirection automatique dans <span id="countdown"><?=$countdown?></span> secondes...</p>
 					<p><a href="#" class="btn btn-danger btn-xs"><i class="fa fa-times fa-fw"></i> Désactiver la redirection</a></p>
