@@ -17,7 +17,7 @@ $cookieName = 'disableRedirect';
 <link rel="stylesheet" type="text/css" href="http://cdn.matiboux.com/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="http://cdn.matiboux.com/css/font-awesome.min.css" />
 <link rel="stylesheet" type="text/css" href="http://cdn.matiboux.com/css/dark-navbar.css" />
-<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="v2.css" />
 
 <title>Portail web - Lycée Jules Verne</title>
 
