@@ -25,7 +25,7 @@ $cookieName = 'disableRedirect';
 <body>
 
 <?php include 'header.php'; ?>
-<div id="main">
+<div id="items">
 	<div class="container">
 		<div class="list">
 			<div id="redirect" class="item small" style="background-image: url('blurred-office.jpg'); display: none">
@@ -51,8 +51,11 @@ $cookieName = 'disableRedirect';
 				</div>
 			</div>
 		</div>
-		
-		<hr />
+	</div>
+</div> <hr />
+
+<div id="main">
+	<div class="container">
 		<p class="text-muted">Interface v3 encore en dévelopement – Questions, Bugs, Signalements ? <a href="mailto:matiboux@gmail.com">Contactez moi</a></p>
 		<p><a href="v2.php">Retour à l'ancienne interface (v2)</a></p>
 	</div>

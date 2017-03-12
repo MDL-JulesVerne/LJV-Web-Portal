@@ -1,5 +1,5 @@
 <header class="navbar navbar-static-top">
-	<div class="container" style="max-width: 750px">
+	<div class="container">
 		<div class="navbar-header">
 			<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
 				<span class="sr-only">Toggle navigation</span>

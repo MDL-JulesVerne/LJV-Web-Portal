@@ -1,31 +1,24 @@
 @import url("http://fonts.googleapis.com/css?family=Roboto:400,700");
 body { font-family:'Roboto', sans-serif; background: #f1f1f1; color: #333 }
 hr { border-color:#ddd }
-#main { padding: 30px 0 }
-.container { max-width: 750px }
-.media { background: #fff; padding: 10px; border:1px solid #bbb; border-radius:5px; box-shadow: 5px 5px 20px 0 #bbb }
-.media.primary { border-width: 2px; border-color:#337ab7 }
-.media .media-left .media-object { width:128px; height:128px; border:1px solid #bbb; border-radius: 3px }
-.media .media-body { vertical-align: middle }
 
-#main { margin: 0; padding: 0 }
-#main .container { max-width: 970px }
+.container { max-width: 750px; }
+
+#items, #main { margin: 0; padding: 0 }
 @media (max-width: 767px) { /* XS Sized Screens */
-	#main .container { padding: 0 }
+	#items .container { padding: 0 }
 }
 @media (min-width: 768px) { /* SM, MD, LG Sized Screens */
-	#main .list { box-shadow: 0 0 20px 2px #bbb }
+	#items .list { box-shadow: 0 0 20px 2px #bbb }
 }
-#main .item { background-size: cover; background-position: center center; background-repeat: no-repeat; height: 200px; border-top: 1px solid rgba(0, 0, 0, .4); border-bottom: 1px solid rgba(0, 0, 0, .3) }
-#main .item:not(#redirect) { cursor: pointer }
-#main .item.small { height: 80px }
-#main .item .content { position: relative; padding: 10px; top: 50%; left: 50%; float: left; text-align: center; color: #fff; transform: translate(-50%, -50%) }
-#main .item .content.text-white { color: #fff; }
-/* #main .item:not(:last-child) { border-bottom: 1px solid #333 } */
-/* #main .item:not(:first-child) { border-top: 1px solid #333 } */
-#main .item h1 { font-size: 30px; margin: 10px 0 }
-#main .item p { font-size: 15px; margin: 5px 0 }
-#main .item .popup { position: relative; top: 10px; left: 50%; float: left; text-align: center; color: #fff; transform: translate(-10px, -50%) }
+#items .item { background-size: cover; background-position: center center; background-repeat: no-repeat; height: 200px; border-top: 1px solid rgba(0, 0, 0, .4); border-bottom: 1px solid rgba(0, 0, 0, .3) }
+#items .item:not(#redirect) { cursor: pointer }
+#items .item.small { height: 80px }
+#items .item .content { position: relative; padding: 10px; top: 50%; left: 50%; float: left; text-align: center; color: #fff; transform: translate(-50%, -50%) }
+#items .item .content.text-white { color: #fff; }
+#items .item h1 { font-size: 30px; margin: 10px 0 }
+#items .item p { font-size: 15px; margin: 5px 0 }
+#items .item .popup { position: relative; top: 10px; left: 50%; float: left; text-align: center; color: #fff; transform: translate(-10px, -50%) }
 
 *:first-child { margin-top: 0 }
 *:last-child { margin-bottom: 0 }
