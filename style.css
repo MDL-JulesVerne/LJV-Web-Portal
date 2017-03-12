@@ -37,5 +37,8 @@ hr { border-color:#ddd }
 #items .item .content { position: relative; padding: 10px; top: 50%; left: 50%; float: left; text-align: center; color: #fff; transform: translate(-50%, -50%) }
 #items .item .content.text-white { color: #fff; }
 
+#footer { background: #202630; margin: 20px 0 0; padding: 20px 0; text-align: center; color: #fff }
+#footer a { color: #fff }
+
 *:first-child { margin-top: 0 }
 *:last-child { margin-bottom: 0 }
