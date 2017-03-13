@@ -45,8 +45,8 @@ $cookieName = 'disableRedirect';
 			<p>Ce dernier est aussi..</p>
 			<ul>
 				<li>Responsable du nom de domaine <a href="http://ljv.fr/">ljv.fr</a>.</li>
-				<li>Propriétaire du serveur d’hébergement web (hébergé chez <a href="https://www.pulseheberg.com/">PulseHeberg</a> et partagé avec la plateforme personnelle de l'élève – indépendante de celle de <a href="http://ljv.fr/">ljv.fr</a>.).</li>
-				<li>Modérateur des projets hébergés</li>
+				<li>Propriétaire du serveur d’hébergement web (hébergé chez <a href="https://www.pulseheberg.com/">PulseHeberg</a> et partagé avec la plateforme personnelle de l'élève – indépendante de celle de <a href="http://ljv.fr/">ljv.fr</a>).</li>
+				<li>Modérateur des projets hébergés sur la plateforme</li>
 				<li>Webmaster du site internet <a href="http://ljv.fr/">ljv.fr</a> – ainsi que celui du <a href="http://nautilus.ljv.fr/">Nautilus</a> (nautilus.ljv.fr)</li>
 			</ul>
 			<p>Informations de contact :</p>
@@ -56,14 +56,14 @@ $cookieName = 'disableRedirect';
 			</ul>
 			
 			<h3>Le Nautilus</h3>
-			<p>Le Nautilus est géré par Adrien Granjon, rédacteur en chef et responsable de la publication. Ce projet étant étroitement lié à la plateforme <a href="http://ljv.fr/">ljv.fr</a>, ce dernier obtient alors un rôle important quand à son organisation.</p>
+			<p>Le Nautilus est géré par Adrien Granjon, rédacteur en chef et responsable de la publication. Ce projet étant étroitement lié à la plateforme <a href="http://ljv.fr/">ljv.fr</a>, ce dernier obtient alors un rôle important dans l'organisation de celle-ci.</p>
 			<p>Informations de contact :</p>
 			<ul>
 				<li>Email : <a href="adrien.granjon@free.fr">adrien.granjon@free.fr</a></li>
 			</ul> <hr />
 		
 		<h2>À propos du portail web <a href="http://ljv.fr/">ljv.fr</a></h2>
-		<p><b>Le projet de portail web est désormais un projet ouvert et open-source!</b></p>
+		<p><b>Le projet est désormais un projet ouvert et open-source!</b></p>
 		<p>Le code source du site internet est entièrement disponible sur <a href="https://github.com/matiboux/LJV-Web-Portal">sa page Github</a> sous la <a href="https://fr.wikipedia.org/wiki/Licence_MIT">license MIT</a>. Depuis cet endroit, vous pourrez suivre l'avancée du développement du site et peut être y contribuer, si vous avez des compétences en développement web.
 	</div>
 </div>
