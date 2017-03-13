@@ -62,7 +62,7 @@ $cookieName = 'disableRedirect';
 				<li>Email : <a href="adrien.granjon@free.fr">adrien.granjon@free.fr</a></li>
 			</ul> <hr />
 		
-		<h2>À propos du portail web <a href="http://ljv.fr/">ljv.fr</a></h2>
+		<h2>Le projet</h2>
 		<p><b>Le projet est désormais un projet ouvert et open-source!</b></p>
 		<p>Le code source du site internet est entièrement disponible sur <a href="https://github.com/matiboux/LJV-Web-Portal">sa page Github</a> sous la <a href="https://fr.wikipedia.org/wiki/Licence_MIT">license MIT</a>. Depuis cet endroit, vous pourrez suivre l'avancée du développement du site et peut être y contribuer, si vous avez des compétences en développement web.
 	</div>
