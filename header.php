@@ -1,5 +1,5 @@
 <header class="navbar navbar-static-top">
-	<div class="container" style="max-width: 750px">
+	<div class="container">
 		<div class="navbar-header">
 			<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
 				<span class="sr-only">Toggle navigation</span>
@@ -13,10 +13,10 @@
 		<nav class="collapse navbar-collapse bs-navbar-collapse">
 			<ul class="nav navbar-nav navbar-left">
 				<li>
-					<a href="http://ljv.fr/"><i class="fa fa-home fa-fw"></i> Home</a>
+					<a href="http://ljv.fr/"><i class="fa fa-home fa-fw"></i> Accueil</a>
 				</li>
 				<li>
-					<a href="http://ljv.fr/about.php"><i class="fa fa-question-circle fa-fw"></i> About</a>
+					<a href="http://ljv.fr/about.php"><i class="fa fa-question-circle fa-fw"></i> À propos</a>
 				</li>
 			</ul>
 			
