@@ -5,7 +5,7 @@
 	</ul>
 	<ul>
 		<li>Version 3.1-dev</li>
-		<li><a href="v2.php">Retour à la version 2.0</a></li>
+		<li><a href="https://github.com/matiboux/LJV-Web-Portal">Projet Open-Source</a></li>
 		<li>Questions, Signalements ? <a href="mailto:matiboux@gmail.com">Contactez moi</a></li>
 	</ul>
 </div>
