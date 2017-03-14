@@ -7,10 +7,10 @@ p { font-size: 13px; margin: 5px 0 }
 
 #items { margin: 0 }
 #main { margin: 20px 0 }
-@media (max-width: 767px) { /* XS Sized Screens */
+@media (max-width: 767px) { /* XS */
 	#items .container { padding: 0 }
 }
-@media (min-width: 768px) { /* SM, MD, LG Sized Screens */
+@media (min-width: 768px) { /* SM, MD, LG */
 	#items .list { box-shadow: 0 0 20px 2px #bbb }
 }
 
@@ -26,28 +26,35 @@ p { font-size: 13px; margin: 5px 0 }
 #items .item .popup.popup-warning { background: rgba(238, 162, 54, .65) } /* Orange */
 #items .item .popup.popup-danger, #items .item .popup.canceled { background: rgba(212, 63, 58, .65) } /* Red */
 
-#items .item .content { position: relative; padding: 10px; top: 50%; left: 50%; float: left; text-align: center; color: #fff; transform: translate(-50%, -50%) }
+#items .item .content { position: relative; padding: 10px; top: 50%; left: 50%; float: left; text-align: center; color: #fff; text-shadow: -1px -1px 0 rgba(0, 0, 0, .65), 1px -1px 0 rgba(0, 0, 0, .65), -1px 1px 0 rgba(0, 0, 0, .65), 1px 1px 0 rgba(0, 0, 0, .65); transform: translate(-50%, -50%) }
 #items .item .content h1 { font-size: 30px; margin: 5px 0 }
-@media (max-width: 767px) { /* XS Sized Screens */
+@media (max-width: 767px) { /* XS */
 	#items .item:not(.big) .content h1 { font-size: 22px }
 	#items .item .content p { font-size: 13px }
 }
-@media (min-width: 768px) { /* SM, MD, LG Sized Screens */
+@media (min-width: 768px) { /* SM, MD, LG */
 	#items .item .content p { font-size: 15px }
 }
 
-#footer { background: #202630; margin: 20px 0 0; padding: 20px 0; text-align: center; color: #fff; font-size: 13px }
+#footer { background: #202630; margin: 20px 0 0; padding: 20px 0; text-align: center; color: #fff }
+@media (max-width: 767px) { /* XS */
+	#footer { font-size: 11px }
+	#footer > *:first-child { font-size: 13px }
+}
+@media (min-width: 768px) { /* SM, MD, LG */
+	#footer { font-size: 13px }
+	#footer > *:first-child { font-size: 15px }
+}
 #items + #footer { margin: 0 }
-#footer > *:first-child { font-size: 15px }
 #footer p, #footer ul { margin-bottom: 5px }
 #footer a { color: #fff; text-decoration: underline }
 #footer a:hover { text-decoration: none }
 
 #footer > ul { padding: 0 }
-@media (max-width: 767px) { /* XS Sized Screens */
+@media (max-width: 767px) { /* XS */
 	#footer > ul > li { display: block }
 }
-@media (min-width: 768px) { /* SM, MD, LG Sized Screens */
+@media (min-width: 768px) { /* SM, MD, LG */
 	#footer > ul > li { display: inline-block }
 	#footer > ul > li:not(:first-child) { margin-left: 5px; padding-left: 8px; border-left: 1px solid #fff; }
 }
