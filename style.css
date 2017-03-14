@@ -52,6 +52,5 @@ p { font-size: 13px; margin: 5px 0 }
 	#footer > ul > li:not(:first-child) { margin-left: 5px; padding-left: 8px; border-left: 1px solid #fff; }
 }
 
-
-*:first-child { margin-top: 0 }
-*:last-child { margin-bottom: 0 }
+#main, #items, #footer *:first-child { margin-top: 0 }
+#main, #items, #footer *:last-child { margin-bottom: 0 }
