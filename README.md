@@ -1,4 +1,4 @@
-# LJV Web Portal ([ljv.fr](http://ljv.fr/)) – v3.0 (UI v3)
+# LJV Web Portal ([ljv.fr](http://ljv.fr/)) – v3.1 dev branch (UI v3)
 
 The **LJV Web Portal** is an *unofficial project* made for the Jules Verne High School (Nantes, France). The project's source code is *free to use* and *released under the MIT license*.
 
