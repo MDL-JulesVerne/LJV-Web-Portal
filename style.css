@@ -18,8 +18,6 @@ p { font-size: 13px; margin: 5px 0 }
 #items .item.big { height: 180px }
 #items .item#redirect { background: #333; height: 80px }
 #items .item:not(#redirect) { cursor: pointer }
-#items .item h1 { font-size: 30px; margin: 10px 0 }
-#items .item p { font-size: 15px; }
 
 #items .item .popup { background: rgba(0, 0, 0, .65); position: absolute; display: block; width: auto; top: 10px; left: 10px; padding: 5px 10px; line-height: 1; color: #fff; font-size: 10px; text-transform: uppercase; cursor: default; border-radius: 3px }
 #items .item .popup.popup-primary, #items .item .popup.ongoing { background: rgba(46, 109, 164, .65) } /* Blue */
@@ -27,7 +25,16 @@ p { font-size: 13px; margin: 5px 0 }
 #items .item .popup.popup-info { background: rgba(70, 184, 218, .65) } /* Light Blue */
 #items .item .popup.popup-warning { background: rgba(238, 162, 54, .65) } /* Orange */
 #items .item .popup.popup-danger, #items .item .popup.canceled { background: rgba(212, 63, 58, .65) } /* Red */
+
 #items .item .content { position: relative; padding: 10px; top: 50%; left: 50%; float: left; text-align: center; color: #fff; transform: translate(-50%, -50%) }
+#items .item .content h1 { font-size: 30px; margin: 5px 0 }
+@media (max-width: 767px) { /* XS Sized Screens */
+	#items .item:not(.big) .content h1 { font-size: 22px }
+	#items .item .content p { font-size: 13px }
+}
+@media (min-width: 768px) { /* SM, MD, LG Sized Screens */
+	#items .item .content p { font-size: 15px }
+}
 
 #footer { background: #202630; margin: 20px 0 0; padding: 20px 0; text-align: center; color: #fff; font-size: 13px }
 #items + #footer { margin: 0 }
