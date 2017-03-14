@@ -35,30 +35,20 @@ $cookieName = 'disableRedirect';
 				</div>
 			</div>
 			
-			<?php $url = 'http://jules-verne.paysdelaloire.e-lyco.fr/'; ?>
-			<div class="item selected" href="<?=$url?>" style="background-image: url('blurred-ljv.jpg')">
+			<div class="item big" href="http://jules-verne.paysdelaloire.e-lyco.fr/" style="background-image: url('blurred-ljv.jpg')">
 				<div id="redirect-status" class="popup ongoing" style="display: none"></div>
 				<div class="content">
 					<h1>Lycée Jules Verne</h1>
 					<p>Le site internet officiel du lycée Jules Verne de Nantes</p>
 				</div>
 			</div>
-			
-			<?php $url = 'http://nautilus.ljv.fr/'; ?>
-			<div class="item" href="<?=$url?>" style="background-image: url('blurred-nautilus.jpg')">
+			<div class="item big" href="http://nautilus.ljv.fr/" style="background-image: url('blurred-nautilus.jpg')">
 				<div class="content">
 					<h1>Le Nautilus</h1>
-					<p>Le journal lycéen du lycée Jules Verne</p>
+					<p>Le journal du lycée Jules Verne</p>
 				</div>
 			</div>
 		</div>
-	</div>
-</div> <hr />
-
-<div id="main">
-	<div class="container">
-		<p class="text-muted">Interface v3 encore en dévelopement – Questions, Bugs, Signalements ? <a href="mailto:matiboux@gmail.com">Contactez moi</a></p>
-		<p><a href="v2.php">Retour à l'ancienne interface (v2)</a></p>
 	</div>
 </div>
 

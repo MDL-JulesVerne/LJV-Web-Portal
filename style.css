@@ -37,8 +37,22 @@ hr { border-color:#ddd }
 #items .item .content { position: relative; padding: 10px; top: 50%; left: 50%; float: left; text-align: center; color: #fff; transform: translate(-50%, -50%) }
 #items .item .content.text-white { color: #fff; }
 
-#footer { background: #202630; margin: 20px 0 0; padding: 20px 0; text-align: center; color: #fff }
-#footer a { color: #fff }
+#footer { background: #202630; margin: 20px 0 0; padding: 20px 0; text-align: center; color: #fff; font-size: 13px }
+#items + #footer { margin: 0 }
+#footer > *:first-child { font-size: 15px }
+#footer p, #footer ul { margin-bottom: 5px }
+#footer a { color: #fff; text-decoration: underline }
+#footer a:hover { text-decoration: none }
+
+#footer > ul { padding: 0 }
+@media (max-width: 767px) { /* XS Sized Screens */
+	#footer > ul > li { display: block }
+}
+@media (min-width: 768px) { /* SM, MD, LG Sized Screens */
+	#footer > ul > li { display: inline-block }
+	#footer > ul > li:not(:first-child) { margin-left: 5px; padding-left: 8px; border-left: 1px solid #fff; }
+}
+
 
 *:first-child { margin-top: 0 }
 *:last-child { margin-bottom: 0 }
