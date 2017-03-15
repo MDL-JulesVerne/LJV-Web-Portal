@@ -14,9 +14,9 @@ $cookieName = 'disableRedirect';
 <meta name="description" content="Portail web non officiel du Lycée Jules Verne" />
 <meta name="keywords" content="portail,portal,web,internet,lycée,high,school,jules,verne,Matiboux" />
 
-<link rel="stylesheet" type="text/css" href="http://cdn.matiboux.com/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="http://cdn.matiboux.com/css/font-awesome.min.css" />
-<link rel="stylesheet" type="text/css" href="http://cdn.matiboux.com/css/dark-navbar.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.matiboux.com/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.matiboux.com/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.matiboux.com/css/dark-navbar.css" />
 <link rel="stylesheet" type="text/css" href="https://ljv.fr/style.css" />
 
 <title>Portail web - Lycée Jules Verne</title>
@@ -73,8 +73,8 @@ $cookieName = 'disableRedirect';
 </div>
 
 <?php include 'footer.php'; ?>
-<script type="text/javascript" src="http://cdn.matiboux.com/js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="http://cdn.matiboux.com/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdn.matiboux.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.matiboux.com/js/bootstrap.min.js"></script>
 
 </body>
 </html>
