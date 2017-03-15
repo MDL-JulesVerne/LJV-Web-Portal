@@ -36,6 +36,10 @@ $cookieName = 'disableRedirect';
 		<ul>
 			<li><a href="http://nautilus.ljv.fr/"><b>Le Nautilus</b></a> (nautilus.ljv.fr), le journal du lycée Jules Verne – un projet réalisé par un groupe de lycéens.</li>
 		</ul>
+		<p>Cependant, celle-ci devrait se doter d'un tout nouveau projet dans les prochains mois :</p>
+		<ul>
+			<li><b>FileDrop</b>, un cloud pour le partage rapide de documents, hébergés temporairement en ligne.</li>
+		</ul>
 		<p>Pour le moment, la plateforme est en construction. À terme, la plateforme devrait pouvoir permettre l'hébergement et la création de nouveaux projets, scolaires ou plus personnels.</p>
 		<?php /*<p>Le responsable de la plateforme est en train de réfléchir au développement d'un cloud ouvert, où les documents hébergés pourrait être visionnés directement depuis un navigateur (pour les images, les pages web, les pdf..)</p>*/ // THIS IS JUST AN IDEA. Although, I already have some scrap code of a cloud project I've made */ ?> <hr />
 		
