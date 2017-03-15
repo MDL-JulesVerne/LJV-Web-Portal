@@ -17,7 +17,7 @@ $cookieName = 'disableRedirect';
 <link rel="stylesheet" type="text/css" href="http://cdn.matiboux.com/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="http://cdn.matiboux.com/css/font-awesome.min.css" />
 <link rel="stylesheet" type="text/css" href="http://cdn.matiboux.com/css/dark-navbar.css" />
-<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="https://ljv.fr/style.css" />
 
 <title>Portail web - Lycée Jules Verne</title>
 
@@ -27,14 +27,14 @@ $cookieName = 'disableRedirect';
 <?php include 'header.php'; ?>
 <div id="main">
 	<div class="container text-justify">
-		<h2>La raison d'être de <a href="http://ljv.fr/">ljv.fr</a></h2>
+		<h2>La raison d'être de <a href="https://ljv.fr/">ljv.fr</a></h2>
 		<p>Ce site internet a été créé d'après une initiative non-officielle de quelques étudiants du lycée Jules Verne. La plateforme derrière le site a pour objectif de <b>permettre l'hébergement de certains projets plus ou moins liés au lycée</b>, et ainsi de faciliter leur réalisation et leur promotion.</p>
-		<p>L'organisation du domaine a été pensée afin d'offir une certaine visibilité aux différents projets proposés, mais aussi de faciliter l'accès au <a href="jules-verne.paysdelaloire.e-lyco.fr">site internet officiel du lycée Jules Verne</a> (jules-verne.paysdelaloire.e-lyco.fr), via <a href="http://ljv.fr/">le portail web de la plateforme</a> (ljv.fr).</p>
+		<p>L'organisation du domaine a été pensée afin d'offir une certaine visibilité aux différents projets proposés, mais aussi de faciliter l'accès au <a href="jules-verne.paysdelaloire.e-lyco.fr">site internet officiel du lycée Jules Verne</a> (jules-verne.paysdelaloire.e-lyco.fr), via <a href="https://ljv.fr/">le portail web de la plateforme</a> (ljv.fr).</p>
 		
 		<h2>Les projets mis en avant</h2>
 		<p>La plateforme ne met en avant qu'un seul projet pour le moment :</p>
 		<ul>
-			<li><a href="http://nautilus.ljv.fr/"><b>Le Nautilus</b></a> (nautilus.ljv.fr), le journal du lycée Jules Verne – un projet réalisé par un groupe de lycéens.</li>
+			<li><a href="https://nautilus.ljv.fr/"><b>Le Nautilus</b></a> (nautilus.ljv.fr), le journal du lycée Jules Verne – un projet réalisé par un groupe de lycéens.</li>
 		</ul>
 		<p>Cependant, celle-ci devrait se doter d'un tout nouveau projet dans les prochains mois :</p>
 		<ul>
@@ -48,10 +48,10 @@ $cookieName = 'disableRedirect';
 			<p>La plateforme et l'hébergement de ce site internet sont gérés par <b>Mathieu Guérin</b> (alias Matiboux), lycéen en classe de 1<sup>ère</sup> S2 au lycée Jules Verne.</p>
 			<p>Ce dernier est aussi..</p>
 			<ul>
-				<li>Responsable du nom de domaine <a href="http://ljv.fr/">ljv.fr</a>.</li>
-				<li>Propriétaire du serveur d’hébergement web (hébergé chez <a href="https://www.pulseheberg.com/">PulseHeberg</a> et partagé avec la plateforme personnelle de l'élève – indépendante de celle de <a href="http://ljv.fr/">ljv.fr</a>).</li>
+				<li>Responsable du nom de domaine <a href="https://ljv.fr/">ljv.fr</a>.</li>
+				<li>Propriétaire du serveur d’hébergement web (hébergé chez <a href="https://www.pulseheberg.com/">PulseHeberg</a> et partagé avec la plateforme personnelle de l'élève – indépendante de celle de <a href="https://ljv.fr/">ljv.fr</a>).</li>
 				<li>Modérateur des projets hébergés sur la plateforme</li>
-				<li>Webmaster du site internet <a href="http://ljv.fr/">ljv.fr</a> – ainsi que celui du <a href="http://nautilus.ljv.fr/">Nautilus</a> (nautilus.ljv.fr)</li>
+				<li>Webmaster du site internet <a href="https://ljv.fr/">ljv.fr</a> – ainsi que celui du <a href="https://nautilus.ljv.fr/">Nautilus</a> (nautilus.ljv.fr)</li>
 			</ul>
 			<p>Informations de contact :</p>
 			<ul>
@@ -60,7 +60,7 @@ $cookieName = 'disableRedirect';
 			</ul>
 			
 			<h3>Le Nautilus</h3>
-			<p>Le Nautilus est géré par Adrien Granjon, rédacteur en chef et responsable de la publication. Ce projet étant étroitement lié à la plateforme <a href="http://ljv.fr/">ljv.fr</a>, ce dernier obtient alors un rôle important dans l'organisation de celle-ci.</p>
+			<p>Le Nautilus est géré par Adrien Granjon, rédacteur en chef et responsable de la publication. Ce projet étant étroitement lié à la plateforme <a href="https://ljv.fr/">ljv.fr</a>, ce dernier obtient alors un rôle important dans l'organisation de celle-ci.</p>
 			<p>Informations de contact :</p>
 			<ul>
 				<li>Email : <a href="adrien.granjon@free.fr">adrien.granjon@free.fr</a></li>

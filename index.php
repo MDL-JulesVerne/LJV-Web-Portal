@@ -17,7 +17,7 @@ $cookieName = 'disableRedirect';
 <link rel="stylesheet" type="text/css" href="http://cdn.matiboux.com/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="http://cdn.matiboux.com/css/font-awesome.min.css" />
 <link rel="stylesheet" type="text/css" href="http://cdn.matiboux.com/css/dark-navbar.css" />
-<link rel="stylesheet" type="text/css" href="http://ljv.fr/style.css" />
+<link rel="stylesheet" type="text/css" href="https://ljv.fr/style.css" />
 
 <title>Portail web - Lycée Jules Verne</title>
 
@@ -35,20 +35,20 @@ $cookieName = 'disableRedirect';
 				</div>
 			</div>
 			
-			<div class="item redirecting big" href="http://jules-verne.paysdelaloire.e-lyco.fr/" style="background-image: url('http://ljv.fr/blurred-ljv.jpg')">
+			<div class="item redirecting big" href="http://jules-verne.paysdelaloire.e-lyco.fr/" style="background-image: url('https://ljv.fr/blurred-ljv.jpg')">
 				<div id="redirect-status" class="popup ongoing" style="display: none"></div>
 				<div class="content">
 					<h1>Lycée Jules Verne</h1>
 					<p>Le site internet officiel du lycée Jules Verne de Nantes</p>
 				</div>
 			</div>
-			<div class="item big" href="http://nautilus.ljv.fr/" style="background-image: url('http://ljv.fr/blurred-nautilus.jpg')">
+			<div class="item big" href="https://nautilus.ljv.fr/" style="background-image: url('https://ljv.fr/blurred-nautilus.jpg')">
 				<div class="content">
 					<h1>Le Nautilus</h1>
 					<p>Le journal du lycée Jules Verne</p>
 				</div>
 			</div>
-			<div class="item" href="#" style="background-image: url('http://ljv.fr/blurred-cloud.jpg')">
+			<div class="item" href="#" style="background-image: url('https://ljv.fr/blurred-cloud.jpg')">
 				<div class="popup popup-warning">En développement</div>
 				<div class="content">
 					<h1><i class="fa fa-cloud-upload fa-fw"></i> FileDrop</h1>
