@@ -24,6 +24,8 @@ $cookieName = 'disableRedirect';
 </head>
 <body>
 
+<?php if(file_exists('analytics.php')) include_once 'analytics.php'; ?>
+
 <?php include 'header.php'; ?>
 <div id="main">
 	<div class="container text-justify">

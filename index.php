@@ -8,7 +8,7 @@ $cookieName = 'disableRedirect';
 <html>
 <head>
 
-<?php if(file_exists('adsense.php')) include 'adsense.php'; ?>
+<?php if(file_exists('adsense.php')) include_once 'adsense.php'; ?>
 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,6 +25,8 @@ $cookieName = 'disableRedirect';
 
 </head>
 <body>
+
+<?php if(file_exists('analytics.php')) include_once 'analytics.php'; ?>
 
 <?php include 'header.php'; ?>
 <div id="items">
