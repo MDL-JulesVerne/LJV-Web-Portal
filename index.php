@@ -54,7 +54,7 @@ $cookieName = 'disableRedirect';
 				<div class="popup popup-warning">En développement</div>
 				<div class="content">
 					<h1><i class="fa fa-cloud-upload fa-fw"></i> FileDrop</h1>
-					<p>Hébergez vos fichiers en ligne temporairement</p>
+					<p>Partagez vos fichiers rapidement en ligne!</p>
 				</div>
 			</div>*/ ?>
 		</div>
