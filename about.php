@@ -43,7 +43,7 @@ $cookieName = 'disableRedirect';
 		<p>Pour le moment, la plateforme est en construction. À terme, la plateforme devrait pouvoir permettre l'hébergement et la création de nouveaux projets, scolaires ou plus personnels.</p>
 		<?php /*<p>Le responsable de la plateforme est en train de réfléchir au développement d'un cloud ouvert, où les documents hébergés pourrait être visionnés directement depuis un navigateur (pour les images, les pages web, les pdf..)</p>*/ // THIS IS JUST AN IDEA. Although, I already have some scrap code of a cloud project I've made */ ?> <hr />
 		
-		<h2>L'équipe de la plateforme</h2>
+		<h2>L'équipe</h2>
 			<h3>Responsable de la plateforme</h3>
 			<p>La plateforme et l'hébergement de ce site internet sont gérés par <b>Mathieu Guérin</b> (alias Matiboux), lycéen en classe de 1<sup>ère</sup> S2 au lycée Jules Verne.</p>
 			<p>Ce dernier est aussi..</p>
