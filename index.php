@@ -50,13 +50,13 @@ $cookieName = 'disableRedirect';
 					<p>Le journal du lycée Jules Verne</p>
 				</div>
 			</div>
-			<div class="item" href="#" style="background-image: url('https://ljv.fr/blurred-cloud.jpg')">
+			<?php /*<div class="item" href="#" style="background-image: url('https://ljv.fr/blurred-cloud.jpg')">
 				<div class="popup popup-warning">En développement</div>
 				<div class="content">
 					<h1><i class="fa fa-cloud-upload fa-fw"></i> FileDrop</h1>
 					<p>Hébergez vos fichiers en ligne temporairement</p>
 				</div>
-			</div>
+			</div>*/ ?>
 		</div>
 	</div>
 </div>
