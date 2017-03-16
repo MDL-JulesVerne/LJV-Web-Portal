@@ -62,8 +62,8 @@ $cookieName = 'disableRedirect';
 <?php include 'footer.php'; ?>
 <script type="text/javascript" src="https://cdn.matiboux.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="https://cdn.matiboux.com/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://cdn.matiboux.com/js/jquery.cookie.js"></script>
 <script type="text/javascript" src="https://cdn.matiboux.com/js/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="https://cdn.matiboux.com/js/js.cookie.js"></script>
 
 <script>
 (function($) {
@@ -98,7 +98,7 @@ $cookieName = 'disableRedirect';
 		if($('#redirect-status').hasClass('ongoing')) $('#redirect-status').removeClass('canceled ongoing').addClass('canceled').empty().text('Redirection auto. annulée');
 	};
 	
-	toggleRedirect(!$.cookie(cookieName));
+	toggleRedirect(!Cookies.get(cookieName) || Cookies.get(cookieName) < Date.now());
 	
 	$(document).ready(function() {
 		$('a').click(function(e) {
@@ -107,7 +107,7 @@ $cookieName = 'disableRedirect';
 				
 				if(ongoing && $(this).parents('#redirect').find('#countdown').length) {
 					disableRedirect();
-					$.cookie(cookieName, true);
+					Cookies.set(cookieName, Date.now() + 10 *60 *1000);
 				}
 			}
 		});
