@@ -8,6 +8,8 @@ $cookieName = 'disableRedirect';
 <html>
 <head>
 
+<?php if(file_exists('adsense.php')) include 'adsense.php'; ?>
+
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="author" content="Matiboux" />
