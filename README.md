@@ -6,7 +6,7 @@ This project purpose is to link all the other projects hosting on the *[ljv.fr](
 
 ### License
 
-Copyright (C) 2017 Mathieu Guérin (aka Matiboux)  
+Copyright (c) 2017 Matiboux (Mathieu Guérin)  
 *You'll find a copy of the MIT license in the **LICENSE** file.*
 
 This license applies to files in this repository.
