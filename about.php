@@ -58,7 +58,7 @@ $cookieName = 'disableRedirect';
 			<li>Telegram : <a href="https://t.me/Matiboux">@Matiboux</a></li>
 		</ul>
 		
-		<h3>Responsable du la publication</h3>
+		<h3>Responsable de la publication</h3>
 		<p>La publication est modérée par <b>Adrien Granjon</b>, redacteur en chef du <a href="https://nautilus.ljv.fr/">Nautilus</a>.</p>
 		<p>Informations de contact :</p>
 		<ul>
