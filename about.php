@@ -74,7 +74,7 @@ $cookieName = 'disableRedirect';
 		
 		<h3>Un projet libre</h3>
 		<p><b>Le projet est désormais un projet ouvert et open-source!</b></p>
-		<p>Le code source du site internet est entièrement disponible sur <a href="https://github.com/matiboux/LJV-Web-Portal">sa page Github</a> sous la <a href="https://fr.wikipedia.org/wiki/Licence_MIT">license MIT</a>. Depuis cet endroit, vous pourrez suivre l'avancée du développement du site et peut être y contribuer, si vous avez des compétences en développement web.
+		<p>Le code source du site internet est entièrement disponible sur <a href="https://github.com/matiboux/LJV-Web-Portal">sa page Github</a> sous la <a href="https://fr.wikipedia.org/wiki/Licence_MIT">license MIT</a>. Depuis cet endroit, vous pourrez suivre l'avancée du développement du site et peut être y contribuer, si vous avez des compétences en développement web.</p>
 	</div>
 </div>
 
