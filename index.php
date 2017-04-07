@@ -8,21 +8,25 @@ $cookieName = 'disableRedirect';
 <html>
 <head>
 
+<?php if(file_exists('adsense.php')) include_once 'adsense.php'; ?>
+
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="author" content="Matiboux" />
 <meta name="description" content="Portail web non officiel du Lycée Jules Verne" />
 <meta name="keywords" content="portail,portal,web,internet,lycée,high,school,jules,verne,Nautilus,Matiboux" />
 
-<link rel="stylesheet" type="text/css" href="http://cdn.matiboux.com/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="http://cdn.matiboux.com/css/font-awesome.min.css" />
-<link rel="stylesheet" type="text/css" href="http://cdn.matiboux.com/css/dark-navbar.css" />
-<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.matiboux.com/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.matiboux.com/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.matiboux.com/css/dark-navbar.css" />
+<link rel="stylesheet" type="text/css" href="https://ljv.fr/style.css" />
 
 <title>Portail web - Lycée Jules Verne</title>
 
 </head>
 <body>
+
+<?php if(file_exists('analytics.php')) include_once 'analytics.php'; ?>
 
 <?php include 'header.php'; ?>
 <div id="items">
@@ -35,38 +39,35 @@ $cookieName = 'disableRedirect';
 				</div>
 			</div>
 			
-			<?php $url = 'http://jules-verne.paysdelaloire.e-lyco.fr/'; ?>
-			<div class="item selected" href="<?=$url?>" style="background-image: url('blurred-ljv.jpg')">
+			<div class="item redirecting big" href="http://jules-verne.paysdelaloire.e-lyco.fr/" style="background-image: url('https://ljv.fr/blurred-ljv.jpg')">
 				<div id="redirect-status" class="popup ongoing" style="display: none"></div>
 				<div class="content">
 					<h1>Lycée Jules Verne</h1>
 					<p>Le site internet officiel du lycée Jules Verne de Nantes</p>
 				</div>
 			</div>
-			
-			<?php $url = 'http://nautilus.ljv.fr/'; ?>
-			<div class="item" href="<?=$url?>" style="background-image: url('blurred-nautilus.jpg')">
+			<div class="item big" href="https://nautilus.ljv.fr/" style="background-image: url('https://ljv.fr/blurred-nautilus.jpg')">
 				<div class="content">
 					<h1>Le Nautilus</h1>
-					<p>Le journal lycéen du lycée Jules Verne</p>
+					<p>Le journal du lycée Jules Verne</p>
 				</div>
 			</div>
+			<?php /*<div class="item" href="#" style="background-image: url('https://ljv.fr/blurred-cloud.jpg')">
+				<div class="popup popup-warning">En développement</div>
+				<div class="content">
+					<h1><i class="fa fa-cloud-upload fa-fw"></i> FileDrop</h1>
+					<p>Partagez vos fichiers rapidement en ligne!</p>
+				</div>
+			</div>*/ ?>
 		</div>
-	</div>
-</div> <hr />
-
-<div id="main">
-	<div class="container">
-		<p class="text-muted">Interface v3 encore en dévelopement – Questions, Bugs, Signalements ? <a href="mailto:matiboux@gmail.com">Contactez moi</a></p>
-		<p><a href="v2.php">Retour à l'ancienne interface (v2)</a></p>
 	</div>
 </div>
 
 <?php include 'footer.php'; ?>
-<script type="text/javascript" src="http://cdn.matiboux.com/js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="http://cdn.matiboux.com/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="http://cdn.matiboux.com/js/jquery.cookie.js"></script>
-<script type="text/javascript" src="http://cdn.matiboux.com/js/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="https://cdn.matiboux.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.matiboux.com/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdn.matiboux.com/js/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="https://cdn.matiboux.com/js/js.cookie.js"></script>
 
 <script>
 (function($) {
@@ -101,7 +102,7 @@ $cookieName = 'disableRedirect';
 		if($('#redirect-status').hasClass('ongoing')) $('#redirect-status').removeClass('canceled ongoing').addClass('canceled').empty().text('Redirection auto. annulée');
 	};
 	
-	toggleRedirect(!$.cookie(cookieName));
+	toggleRedirect(!Cookies.get(cookieName) || Cookies.get(cookieName) < Date.now());
 	
 	$(document).ready(function() {
 		$('a').click(function(e) {
@@ -110,7 +111,7 @@ $cookieName = 'disableRedirect';
 				
 				if(ongoing && $(this).parents('#redirect').find('#countdown').length) {
 					disableRedirect();
-					$.cookie(cookieName, true);
+					Cookies.set(cookieName, Date.now() + 10 *60 *1000);
 				}
 			}
 		});

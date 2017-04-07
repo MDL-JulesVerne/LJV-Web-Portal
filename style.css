@@ -1,44 +1,63 @@
-@import url("http://fonts.googleapis.com/css?family=Roboto:400,700");
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 body { font-family:'Roboto', sans-serif; background: #f1f1f1; color: #333 }
 hr { border-color:#ddd }
+p { font-size: 13px; margin: 5px 0 }
 
 .container { max-width: 750px; }
 
 #items { margin: 0 }
 #main { margin: 20px 0 }
-@media (max-width: 767px) { /* XS Sized Screens */
+@media (max-width: 767px) { /* XS */
 	#items .container { padding: 0 }
 }
-@media (min-width: 768px) { /* SM, MD, LG Sized Screens */
+@media (min-width: 768px) { /* SM, MD, LG */
 	#items .list { box-shadow: 0 0 20px 2px #bbb }
 }
 
-#items .item { position: relative; background-size: cover; background-position: center center; background-repeat: no-repeat; height: 200px; border-top: 1px solid rgba(0, 0, 0, .4); border-bottom: 1px solid rgba(0, 0, 0, .3) }
+#items .item { background: #eee; position: relative; background-size: cover; background-position: center center; background-repeat: no-repeat; height: 120px; border-top: 1px solid rgba(0, 0, 0, .4); border-bottom: 1px solid rgba(0, 0, 0, .3) }
+#items .item.big { height: 180px }
 #items .item#redirect { background: #333; height: 80px }
 #items .item:not(#redirect) { cursor: pointer }
-#items .item h1 { font-size: 30px; margin: 10px 0 }
-#items .item p { font-size: 15px; margin: 5px 0 }
-#items .item .popup { background: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    display: block;
-    width: auto;
-    top: 10px;
-    left: 10px;
-    padding: 5px 10px;
-    line-height: 1;
-	color: #fff;
-    font-size: 10px;
-    text-transform: uppercase;
-	cursor: default;
-    border-radius: 3px;
+
+#items .item .popup { background: rgba(0, 0, 0, .65); position: absolute; display: block; width: auto; top: 10px; left: 10px; padding: 5px 10px; line-height: 1; color: #fff; font-size: 10px; text-transform: uppercase; cursor: default; border-radius: 3px }
+#items .item .popup.popup-primary, #items .item .popup.ongoing { background: rgba(46, 109, 164, .65) } /* Blue */
+#items .item .popup.popup-success { background: rgba(76, 174, 76, .65) } /* Green */
+#items .item .popup.popup-info { background: rgba(70, 184, 218, .65) } /* Light Blue */
+#items .item .popup.popup-warning { background: rgba(238, 162, 54, .65) } /* Orange */
+#items .item .popup.popup-danger, #items .item .popup.canceled { background: rgba(212, 63, 58, .65) } /* Red */
+
+#items .item .content { position: relative; padding: 10px; top: 50%; left: 50%; float: left; text-align: center; color: #fff; text-shadow: -1px -1px 5px rgba(0, 0, 0, .35), 1px -1px 5px rgba(0, 0, 0, .35), -1px 1px 5px rgba(0, 0, 0, .35), 1px 1px 5px rgba(0, 0, 0, .35); transform: translate(-50%, -50%) }
+#items .item .content h1 { font-size: 30px; margin: 5px 0 }
+@media (max-width: 767px) { /* XS */
+	#items .item:not(.big) .content h1 { font-size: 22px }
+	#items .item .content p { font-size: 13px }
 }
-#items .item .popup.ongoing { background: rgba(46, 109, 164, 0.6) } /* Blue */
-#items .item .popup.canceled { background: rgba(212, 63, 58, 0.6) } /* Red */
-#items .item .content { position: relative; padding: 10px; top: 50%; left: 50%; float: left; text-align: center; color: #fff; transform: translate(-50%, -50%) }
-#items .item .content.text-white { color: #fff; }
+@media (min-width: 768px) { /* SM, MD, LG */
+	#items .item .content p { font-size: 15px }
+}
 
 #footer { background: #202630; margin: 20px 0 0; padding: 20px 0; text-align: center; color: #fff }
-#footer a { color: #fff }
+@media (max-width: 767px) { /* XS */
+	#footer { font-size: 11px }
+	#footer > *:first-child { font-size: 13px }
+}
+@media (min-width: 768px) { /* SM, MD, LG */
+	#footer { font-size: 13px }
+	#footer > *:first-child { font-size: 15px }
+}
+#items + #footer { margin: 0 }
+#footer p, #footer ul { margin-bottom: 5px }
+#footer a { color: #fff; text-decoration: underline }
+#footer a:hover { text-decoration: none }
 
-*:first-child { margin-top: 0 }
-*:last-child { margin-bottom: 0 }
+#footer > ul { padding: 0 }
+@media (max-width: 767px) { /* XS */
+	#footer > ul > li { display: block }
+}
+@media (min-width: 768px) { /* SM, MD, LG */
+	#footer > ul > li { display: inline-block }
+	#footer > ul > li:not(:first-child) { margin-left: 5px; padding-left: 8px; border-left: 1px solid #fff; }
+}
+
+#main, #items, #footer *:first-child { margin-top: 0 }
+#main, #items, #footer *:last-child { margin-bottom: 0 }
