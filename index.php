@@ -95,12 +95,6 @@ $cookieName = 'disableRedirect';
 			$('#redirect-status').removeClass('canceled ongoing').empty().text('Redirection auto. désactivée').show();
 		}
 	};
-	var disableRedirect = function() {
-		ongoing = false;
-		$('#redirect .content').empty().append($('<p>').append($('<i>').addClass('fa fa-times fa-fw'), ' Redirection automatique désactivée'));
-		$('#redirect').animate({'margin-top': '-80px'});
-		if($('#redirect-status').hasClass('ongoing')) $('#redirect-status').removeClass('canceled ongoing').addClass('canceled').empty().text('Redirection auto. annulée');
-	};
 	
 	toggleRedirect(!Cookies.get(cookieName) || Cookies.get(cookieName) < Date.now());
 	
@@ -110,7 +104,11 @@ $cookieName = 'disableRedirect';
 				e.preventDefault();
 				
 				if(ongoing && $(this).parents('#redirect').find('#countdown').length) {
-					disableRedirect();
+					ongoing = false;
+					$('#redirect .content').empty().append($('<p>').append($('<i>').addClass('fa fa-times fa-fw'), ' Redirection auto. désactivée'));
+					$('#redirect').animate({'margin-top': '-80px'});
+					if($('#redirect-status').hasClass('ongoing')) $('#redirect-status').removeClass('canceled ongoing').addClass('canceled').empty().text('Redirection auto. désactivée');
+					
 					Cookies.set(cookieName, Date.now() + 10 *60 *1000);
 				}
 			}
@@ -119,7 +117,12 @@ $cookieName = 'disableRedirect';
 		$('.item').click(function(e) {
 			if($(this).attr('href') != '' && $(this).attr('href') != '#' && $(this).attr('id') != 'redirect') {
 				e.preventDefault();
-				disableRedirect();
+				
+				ongoing = false;
+				$('#redirect .content').empty().append($('<p>').append($('<i>').addClass('fa fa-times fa-fw'), ' Redirection auto. interrompue'));
+				$('#redirect').animate({'margin-top': '-80px'});
+				if($('#redirect-status').hasClass('ongoing')) $('#redirect-status').removeClass('canceled ongoing').addClass('canceled').empty().text('Redirection auto. interrompue');
+				
 				window.location = $(this).attr('href');
 			}
 		});
