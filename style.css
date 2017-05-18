@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
-body { font-family:'Roboto', sans-serif; background: #f1f1f1; color: #333 }
-hr { border-color:#ddd }
+body { font-family: 'Roboto', sans-serif; background: #303945; color: #333 }
+hr { border-color: #ddd }
 p { font-size: 13px; margin: 5px 0 }
 
 .container { max-width: 750px; }
 
+#items, #main { background: #101315 }
 #items { margin: 0 }
 #main { margin: 20px 0 }
 @media (max-width: 767px) { /* XS */
 	#items .container { padding: 0 }
 }
 @media (min-width: 768px) { /* SM, MD, LG */
-	#items .list { box-shadow: 0 0 20px 2px #bbb }
+	#items .list { box-shadow: 0 0 20px 2px rgba(0, 0, 0, .35) }
 }
 
 #items .item { background: #eee; position: relative; background-size: cover; background-position: center center; background-repeat: no-repeat; height: 120px; border-top: 1px solid rgba(0, 0, 0, .4); border-bottom: 1px solid rgba(0, 0, 0, .3) }
