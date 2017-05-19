@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
-body { font-family:'Roboto', sans-serif; background: #f1f1f1; color: #333 }
-hr { border-color:#ddd }
+body { font-family: 'Roboto', sans-serif; background: #303945; color: #333 }
+hr { border-color: rgba(0, 0, 0, .10) }
 p { font-size: 13px; margin: 5px 0 }
 
-.container { max-width: 750px; }
+.container { max-width: 750px }
 
-#items { margin: 0 }
-#main { margin: 20px 0 }
+#items, #main { margin: 0; background: #101315 }
+#main .container { background: #e5e5e5; padding: 15px }
 @media (max-width: 767px) { /* XS */
 	#items .container { padding: 0 }
 }
 @media (min-width: 768px) { /* SM, MD, LG */
-	#items .list { box-shadow: 0 0 20px 2px #bbb }
+	#items .list, #main .container { box-shadow: 0 0 20px 2px rgba(0, 0, 0, .35) }
 }
 
 #items .item { background: #eee; position: relative; background-size: cover; background-position: center center; background-repeat: no-repeat; height: 120px; border-top: 1px solid rgba(0, 0, 0, .4); border-bottom: 1px solid rgba(0, 0, 0, .3) }
 #items .item.big { height: 180px }
-#items .item#redirect { background: #333; height: 80px }
+#items .item#redirect { background: #303945; height: 80px }
 #items .item:not(#redirect) { cursor: pointer }
 
 #items .item .popup { background: rgba(0, 0, 0, .65); position: absolute; display: block; width: auto; top: 10px; left: 10px; padding: 5px 10px; line-height: 1; color: #fff; font-size: 10px; text-transform: uppercase; cursor: default; border-radius: 3px }
@@ -36,7 +36,7 @@ p { font-size: 13px; margin: 5px 0 }
 	#items .item .content p { font-size: 15px }
 }
 
-#footer { background: #202630; margin: 20px 0 0; padding: 20px 0; text-align: center; color: #fff }
+#footer { background: #202630; margin: 0; padding: 20px 0; text-align: center; color: #fff }
 @media (max-width: 767px) { /* XS */
 	#footer { font-size: 11px }
 	#footer > *:first-child { font-size: 13px }
@@ -44,8 +44,7 @@ p { font-size: 13px; margin: 5px 0 }
 @media (min-width: 768px) { /* SM, MD, LG */
 	#footer { font-size: 13px }
 	#footer > *:first-child { font-size: 15px }
-}
-#items + #footer { margin: 0 }
+
 #footer p, #footer ul { margin-bottom: 5px }
 #footer a { color: #fff; text-decoration: underline }
 #footer a:hover { text-decoration: none }
@@ -59,5 +58,5 @@ p { font-size: 13px; margin: 5px 0 }
 	#footer > ul > li:not(:first-child) { margin-left: 5px; padding-left: 8px; border-left: 1px solid #fff; }
 }
 
-#main, #items, #footer *:first-child { margin-top: 0 }
-#main, #items, #footer *:last-child { margin-bottom: 0 }
+#main *:first-child, #items *:first-child, #footer *:first-child { margin-top: 0 }
+#main *:first-child, #items *:first-child, #footer *:last-child { margin-bottom: 0 }

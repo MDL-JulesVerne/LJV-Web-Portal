@@ -30,7 +30,7 @@ $cookieName = 'disableRedirect';
 <div id="main">
 	<div class="container text-justify">
 		<h3>Le site internet</h3>
-		<p><a href="https://ljv.fr/">ljv.fr</a> a été créé d'après une initiative non-officielle de quelques étudiants du lycée Jules Verne. La plateforme derrière le site a pour objectif de <b>permettre l'hébergement de certains projets plus ou moins liés à l'établissement</b> ou à sa vie lycéenne, et ainsi de faciliter leur réalisation et leur diffusion.</p>
+		<p><a href="https://ljv.fr/">ljv.fr</a> a été créé d'après une initiative non-officielle d'un groupe de quelques étudiants du lycée Jules Verne. La plateforme abritant le site internet a pour objectif de <b>permettre l'hébergement de certains projets liés à l'établissement</b> ou à sa vie lycéenne, et ainsi de faciliter leur réalisation et développement.</p>
 		<p>L'organisation du domaine a été pensée afin d'offir une certaine visibilité aux différents projets proposés, mais également de manière à faciliter l'accès au <a href="http://jules-verne.paysdelaloire.e-lyco.fr/">site internet officiel du lycée Jules Verne</a> (jules-verne.paysdelaloire.e-lyco.fr), via <a href="https://ljv.fr/">le portail web de la plateforme</a> (ljv.fr).</p>
 		
 		<h3>Les projets mis en avant</h3>
