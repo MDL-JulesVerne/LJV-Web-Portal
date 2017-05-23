@@ -44,7 +44,7 @@ p { font-size: 13px; margin: 5px 0 }
 @media (min-width: 768px) { /* SM, MD, LG */
 	#footer { font-size: 13px }
 	#footer > *:first-child { font-size: 15px }
-
+}
 #footer p, #footer ul { margin-bottom: 5px }
 #footer a { color: #fff; text-decoration: underline }
 #footer a:hover { text-decoration: none }
