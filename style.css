@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 body { font-family: 'Roboto', sans-serif; background: #303945; color: #333 }
-hr { border-color: rgba(0, 0, 0, .10) }
+hr { border-color: rgba(255, 255, 255, .2) }
 p { font-size: 13px; margin: 5px 0 }
 
 .container { max-width: 750px }
 
 #items, #main { margin: 0; background: #101315 }
-#main .container { background: #e5e5e5; padding: 15px }
+#main .container { background: #151922; padding: 15px; color: #e0e0e0 }
 @media (max-width: 767px) { /* XS */
 	#items .container { padding: 0 }
 }
