@@ -6,7 +6,7 @@ p { font-size: 13px; margin: 5px 0 }
 .container { max-width: 750px }
 
 #items, #main { margin: 0; background: #101315 }
-#main .container { background: #151922; padding: 15px; color: #e0e0e0 }
+#main .container { background: #122436; padding: 15px; color: #e0e0e0 }
 @media (max-width: 767px) { /* XS */
 	#items .container { padding: 0 }
 }
