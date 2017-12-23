@@ -4,7 +4,7 @@
 		<li>Projet <a href="https://github.com/matiboux/LJV-Web-Portal">Open-Source</a></li>
 	</ul>
 	<ul>
-		<li>Version 3.4.0</li>
+		<li>Version 3.5.0</li>
 		<li>Questions, Signalements ? <a href="mailto:matiboux@gmail.com">Contactez le développeur</a></li>
 	</ul>
 </div>

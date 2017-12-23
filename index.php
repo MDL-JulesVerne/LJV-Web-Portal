@@ -26,27 +26,31 @@ $cookieName = 'disableRedirect';
 </head>
 <body>
 
-<?php if(file_exists('analytics.php')) include_once 'analytics.php'; ?>
-
 <?php include 'header.php'; ?>
 <div id="items">
 	<div class="container">
 		<div class="list">
-			<div id="redirect" class="item" style="margin-top: -80px">
+			<div id="redirect" class="item item-text" style="margin-top: -80px">
 				<div class="content">
 					<p>Redirection automatique dans <span id="countdown"><?=$countdown?></span> secondes...</p>
 					<p><a href="#" class="btn btn-danger btn-xs"><i class="fa fa-times fa-fw"></i> Désactiver la redirection</a></p>
 				</div>
 			</div>
 			
-			<div class="item redirecting big" href="http://jules-verne.paysdelaloire.e-lyco.fr/" style="background-image: url('https://ljv.fr/blurred-ljv.jpg')">
+			<div class="item item-text item-sm" href="http://ljv.fr/about.php">
+				<div class="content">
+					<p>La page "À propos" a été mise à jour! Jetez-y un oeil.</p>
+				</div>
+			</div>
+			
+			<div class="item redirecting item-lg" href="http://jules-verne.paysdelaloire.e-lyco.fr/" style="background-image: url('https://ljv.fr/blurred-ljv.jpg')">
 				<div id="redirect-status" class="popup ongoing" style="display: none"></div>
 				<div class="content">
 					<h1>Lycée Jules Verne</h1>
 					<p>Le site internet officiel du lycée Jules Verne de Nantes</p>
 				</div>
 			</div>
-			<div class="item big" href="https://nautilus.ljv.fr/" style="background-image: url('https://ljv.fr/blurred-nautilus.jpg')">
+			<div class="item" href="https://nautilus.ljv.fr/" style="background-image: url('https://ljv.fr/blurred-nautilus.jpg')">
 				<div class="content">
 					<h1>Le Nautilus</h1>
 					<p>Le journal du lycée Jules Verne</p>

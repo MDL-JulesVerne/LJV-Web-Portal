@@ -5,8 +5,13 @@ p { font-size: 13px; margin: 5px 0 }
 
 .container { max-width: 750px }
 
-#items, #main { margin: 0; background: #101315 }
-#main .container { background: #122436; padding: 15px; color: #e0e0e0 }
+#items, #main { margin: 0 }
+
+#main { background: #101010; color: #e0e0e0 }
+#main h1, #main h2, #main h3 { color: #f0f0f0 }
+#main .container { background: #202020; padding: 15px }
+
+#items { background: #101315 }
 @media (max-width: 767px) { /* XS */
 	#items .container { padding: 0 }
 }
@@ -15,8 +20,13 @@ p { font-size: 13px; margin: 5px 0 }
 }
 
 #items .item { background: #eee; position: relative; background-size: cover; background-position: center center; background-repeat: no-repeat; height: 120px; border-top: 1px solid rgba(0, 0, 0, .4); border-bottom: 1px solid rgba(0, 0, 0, .3) }
-#items .item.big { height: 180px }
-#items .item#redirect { background: #303945; height: 80px }
+#items .item.item-sm { height: 80px }
+#items .item.item-lg { height: 160px }
+#items .item.item-text { background: #303945; height: 80px }
+#items .item.item-text.item-sm { height: 40px }
+#items .item.item-text.item-lg { height: 120px }
+
+#items .item#redirect { height: 80px }
 #items .item:not(#redirect) { cursor: pointer }
 
 #items .item .popup { background: rgba(0, 0, 0, .65); position: absolute; display: block; width: auto; top: 10px; left: 10px; padding: 5px 10px; line-height: 1; color: #fff; font-size: 10px; text-transform: uppercase; cursor: default; border-radius: 3px }

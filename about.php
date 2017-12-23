@@ -1,10 +1,3 @@
-<?php
-$countdown = 3; // seconds
-$location = 'http://jules-verne.paysdelaloire.e-lyco.fr/';
-// header('Refresh: ' . $countdown . '; Url=' . $location);
-$cookieName = 'disableRedirect';
-?>
-
 <html>
 <head>
 
@@ -24,47 +17,51 @@ $cookieName = 'disableRedirect';
 </head>
 <body>
 
-<?php if(file_exists('analytics.php')) include_once 'analytics.php'; ?>
-
 <?php include 'header.php'; ?>
 <div id="main">
 	<div class="container text-justify">
-		<h3>Le site internet</h3>
-		<p><a href="https://ljv.fr/">ljv.fr</a> a été créé d'après une initiative non-officielle d'un groupe de quelques étudiants du lycée Jules Verne. La plateforme abritant le site internet a pour objectif de <b>permettre l'hébergement de certains projets liés à l'établissement</b> ou à sa vie lycéenne, et ainsi de faciliter leur réalisation et développement.</p>
-		<p>L'organisation du domaine a été pensée afin d'offir une certaine visibilité aux différents projets proposés, mais également de manière à faciliter l'accès au <a href="http://jules-verne.paysdelaloire.e-lyco.fr/">site internet officiel du lycée Jules Verne</a> (jules-verne.paysdelaloire.e-lyco.fr), via <a href="https://ljv.fr/">le portail web de la plateforme</a> (ljv.fr).</p>
+		<h2>I. Le site internet</h2>
+		<p><b><a href="https://ljv.fr/">ljv.fr</a></b> a été créé d'après une initiative non-officielle d'un groupe de quelques étudiants du lycée Jules Verne. Ce  site internet a été pensé comme un "portail", dans le but de faire le lien entre le site officiel du lycée et ses projets externes, gérés par des lycéens. Ces projets peuvent être hébergés sur la plateforme du site internet et sont liés à l’établissement ou à sa vie lycéenne.</p>
+		<p>L’organisation du domaine « ljv.fr » a été pensée afin d’offrir une certaine visibilité à tous les projets qui lui sont liés, ainsi qu’au site officiel du lycée.</p>
+		<hr />
 		
-		<h3>Les projets mis en avant</h3>
-		<p>Pour le moment, la plateforme n'a pour rôle de mettre en avant qu'un seul projet :</p>
-		<ul>
-			<li><a href="https://nautilus.ljv.fr/"><b>Le Nautilus</b></a> (nautilus.ljv.fr), le journal du lycée Jules Verne – un projet réalisé par un groupe de lycéens.</li>
-		</ul>
-		<?php /*<p>Cependant, celle-ci devrait se doter d'un tout nouveau projet dans les prochains mois :</p>
-		<ul>
-			<li><b>FileDrop</b>, un cloud pour le partage rapide de documents, hébergés temporairement en ligne.</li>
-		</ul>*/ ?>
-		<p>La plateforme est constament en développement. La plateforme est bien sûr ouverte à permettre l'hébergement et la création de nouveaux projets, scolaires ou plus personnels. Une modération occasionnelle sera bien sûr assurée par l'équipe de <a href="https://ljv.fr/">ljv.fr</a> sur ces derniers – ils ne seront cependant pas nécéssairement sous la responsabilité de notre équipe.</p> <hr />
+		<h2>II. Les projets</h2>
+		<p>La plateforme a pour but de permettre l’hébergement de projets de lycéens sur Internet. Pour le moment, la plateforme n’héberge que ce site internet et le journal du lycée « Le Nautilus ».</p>
+		<p>La plateforme est en constant développement et ouverte à toutes suggestions. La plateforme est bien sûr ouverte à de nouveaux projets. Les projets ne sont pas nécessairement sous la responsabilité de l’équipe du site internet, mais devront veiller à respecter les règles légales, d'éthique et d’équité.</p>
+		<hr />
 		
-		<h3>Responsable de la plateforme</h3>
-		<p>La plateforme de le site internet sont gérés par <b>Matiboux</b> (Mathieu Guérin), élève au lycée Jules Verne. Ce dernier est également..</p>
-		<ul>
-			<li>Responsable du nom de domaine <a href="https://ljv.fr/">ljv.fr</a>.</li>
-			<li>Modérateur des projets hébergés sur la plateforme.</li>
-			<li>Webmaster de ce site internet, ainsi que celui du <a href="https://nautilus.ljv.fr/">Nautilus</a> (nautilus.ljv.fr).</li>
-		</ul>
+		<h2>III. Une politique Open-Source</h2>
+		<p>Le code source du site internet ljv.fr est entièrement disponible en ligne: vous pouvez le visualiser ou le télécharger depuis <a href="https://github.com/matiboux/LJV-Web-Portal">sa page Github</a>. Le code est distribué sous la <a href="https://fr.wikipedia.org/wiki/Licence_MIT">license MIT</a>.</p>
+		<p>Si vous souhaitez suivre le développement de ce site internet ou y participer, vous pouvez vous abonner à sa page Github ou proposer vos propres modifications. <br />
+		Si vous souhaitez vous investir d'une autre manière ou dans un autre projet, merci de prendre contact avec un membre de l’équipe du projet auquel vous vous intéressez.</p>
+		<hr />
+		
+		<h2>IV. Mentions légales</h2>
+		<h3>1. Responsable de la plateforme et du site internet</h3>
+		<p>La plateforme de ce site internet est gérée par Mathieu Guérin (alias « Matiboux »), élève en Terminale au lycée Jules Verne. Ce dernier est également propriétaire du domaine « ljv.fr » et webmaster de ce site internet.</p>
 		<p>Informations de contact :</p>
 		<ul>
 			<li>Email : <a href="mailto:matiboux@gmail.com">matiboux@gmail.com</a></li>
 			<li>Telegram : <a href="https://t.me/Matiboux">@Matiboux</a></li>
 		</ul>
 		
-		<h3>Hébergement</h3>
-		<p>La plateforme est hébergée chez <a href="https://www.pulseheberg.com/">PulseHeberg</a>.</p>
-		<p>Adresse : 16-18 avenue de L'Europe, 78140 Vélizy-Villacoublay</p> <hr />
+		<h3>2. Hébergeur de la plateforme</h3>
+		<p>La plateforme est hébergée chez <b><a href="https://www.pulseheberg.com/">PulseHeberg</a></b>. <br />
+		<i class="text-muted">Adresse : 16-18 avenue de L'Europe, 78140 Vélizy-Villacoublay</i></p>
+		<hr />
 		
-		<h3>Un projet open-source</h3>
-		<p><b>Le code source du site du portail web que vous visualisez est disponible en ligne!</b></p>
-		<p>Le code est entièrement disponible sur <a href="https://github.com/matiboux/LJV-Web-Portal">sa page Github</a> et distribué sous la <a href="https://fr.wikipedia.org/wiki/Licence_MIT">license MIT</a>.</p>
-		<p>Si vous le souhaitez, vous pouvez suivre l'avancée du développement du site ou y contribuer depuis Github. Si vous souhaiter vous investir d'une autre manière, merci de prendre contact avec notre équipe ou celle du projet auquel vous vous intéresser.</p>
+		<h2>V. Conditions d’utilisation</h2>
+		<p>L’équipe gérant ce site internet (ljv.fr) ne peut être tenu pour responsable de l’utilisation que vous en faites ou des problèmes que vous pourrez rencontrer. En utilisant ljv.fr, vous assurez avoir pris connaissance des conditions d’utilisation suivantes :</p>
+		<ul>
+			<li>
+				Vous acceptez la création et l’utilisation de cookies dans votre navigateur. <br />
+				Ces cookies seront utilisés de manière à mémoriser vos préférences (exemple : la désactivation de la redirection automatique).
+			</li>
+		</ul>
+		<p><b>Remarque :</b> Ces conditions d'utilisation sont susceptibles d’être modifiées sans préavis. De plus, celles-ci ne s’appliquent pas forcément aux autres projets hébergés sur la plateforme, ou liés à celle-ci.</p>
+		<hr />
+
+		<p class="text-muted"><b>Dernière modification :</b> le 23 décembre 2017.</p>
 	</div>
 </div>
 
