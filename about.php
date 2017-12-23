@@ -1,10 +1,3 @@
-<?php
-$countdown = 3; // seconds
-$location = 'http://jules-verne.paysdelaloire.e-lyco.fr/';
-// header('Refresh: ' . $countdown . '; Url=' . $location);
-$cookieName = 'disableRedirect';
-?>
-
 <html>
 <head>
 
