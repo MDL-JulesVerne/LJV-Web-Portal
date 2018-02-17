@@ -37,12 +37,6 @@ $cookieName = 'disableRedirect';
 				</div>
 			</div>
 			
-			<div class="item item-text item-sm" href="http://ljv.fr/about.php">
-				<div class="content">
-					<p>La page "À propos" a été mise à jour! Jetez-y un oeil.</p>
-				</div>
-			</div>
-			
 			<div class="item redirecting item-lg" href="http://jules-verne.paysdelaloire.e-lyco.fr/" style="background-image: url('https://ljv.fr/blurred-ljv.jpg')">
 				<div id="redirect-status" class="popup ongoing" style="display: none"></div>
 				<div class="content">
