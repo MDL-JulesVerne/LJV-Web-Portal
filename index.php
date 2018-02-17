@@ -44,6 +44,12 @@ $cookieName = 'disableRedirect';
 					<p>Le site internet officiel du lycée Jules Verne de Nantes</p>
 				</div>
 			</div>
+			<div class="item" href="https://mdl.ljv.fr/" style="background-image: url('https://ljv.fr/blurred-mdl.jpg')">
+				<div class="content">
+					<h1>MDL Jules Verne</h1>
+					<p>Le site de la Maison des Lycéens</p>
+				</div>
+			</div>
 			<div class="item" href="https://nautilus.ljv.fr/" style="background-image: url('https://ljv.fr/blurred-nautilus.jpg')">
 				<div class="content">
 					<h1>Le Nautilus</h1>
