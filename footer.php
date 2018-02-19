@@ -4,7 +4,7 @@
 		<li>Projet <a href="https://github.com/MDL-JulesVerne/LJV-Web-Portal">Open-Source</a></li>
 	</ul>
 	<ul>
-		<li>Version 3.6.1</li>
+		<li>Version 3.6.2</li>
 		<li>Questions, Signalements ? <a href="mailto:matiboux@gmail.com">Contactez le développeur</a></li>
 	</ul>
 </div>

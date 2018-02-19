@@ -1,28 +1,18 @@
 <html>
 <head>
 
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="author" content="Matiboux" />
-<meta name="description" content="Portail web non officiel du Lycée Jules Verne" />
-<meta name="keywords" content="portail,portal,web,internet,lycée,high,school,jules,verne,Matiboux" />
-
-<link rel="shortcut icon" type="image/png" href="https://ljv.fr/favicon.png" />
-<link rel="stylesheet" type="text/css" href="https://cdn.matiboux.com/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="https://cdn.matiboux.com/css/font-awesome.min.css" />
-<link rel="stylesheet" type="text/css" href="https://cdn.matiboux.com/css/dark-navbar.css" />
-<link rel="stylesheet" type="text/css" href="style.css" />
-
+<?php include 'head.php'; ?>
 <title>Portail web - Lycée Jules Verne</title>
 
 </head>
 <body>
 
 <?php include 'header.php'; ?>
+
 <div id="main">
 	<div class="container text-justify">
 		<h2>I. Le site internet</h2>
-		<p><b><a href="https://ljv.fr/">ljv.fr</a></b> a été créé d'après une initiative non-officielle d'un groupe de quelques étudiants du lycée Jules Verne. Ce  site internet a été pensé comme un "portail", dans le but de faire le lien entre le site officiel du lycée et ses projets externes, gérés par des lycéens. Ces projets peuvent être hébergés sur la plateforme du site internet et sont liés à l’établissement ou à sa vie lycéenne.</p>
+		<p><b><a href="https://ljv.fr/">ljv.fr</a></b> a été créé d'après une initiative non-officielle d'un groupe de quelques lycéens du lycée Jules Verne. Ce  site internet a été pensé comme un "portail", dans le but de faire le lien entre le site officiel du lycée et ses projets externes, gérés par des lycéens. Ces projets peuvent être hébergés sur la plateforme du site internet et sont liés à l’établissement ou à sa vie lycéenne.</p>
 		<p>L’organisation du domaine « ljv.fr » a été pensée afin d’offrir une certaine visibilité à tous les projets qui lui sont liés, ainsi qu’au site officiel du lycée.</p>
 		<hr />
 		
@@ -47,8 +37,8 @@
 		</ul>
 		
 		<h3>2. Hébergeur de la plateforme</h3>
-		<p>La plateforme est hébergée chez <b><a href="https://www.pulseheberg.com/">PulseHeberg</a></b>. <br />
-		<i class="text-muted">Adresse : 16-18 avenue de L'Europe, 78140 Vélizy-Villacoublay</i></p>
+		<p>La plateforme est hébergée chez <b><a href="https://www.dyjix.eu/">Dyjix</a></b>. <br />
+		<i class="text-muted">Adresse : Lieu-dit Mannetot, 14370 Mery-Corbon</i></p>
 		<hr />
 		
 		<h2>V. Conditions d’utilisation</h2>
@@ -62,11 +52,12 @@
 		<p><b>Remarque :</b> Ces conditions d'utilisation sont susceptibles d’être modifiées sans préavis. De plus, celles-ci ne s’appliquent pas forcément aux autres projets hébergés sur la plateforme, ou liés à celle-ci.</p>
 		<hr />
 
-		<p class="text-muted"><b>Dernière modification :</b> le 23 décembre 2017.</p>
+		<p class="text-muted"><b>Dernière modification :</b> le 19 février 2018.</p>
 	</div>
 </div>
 
 <?php include 'footer.php'; ?>
+
 <script type="text/javascript" src="https://cdn.matiboux.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="https://cdn.matiboux.com/js/bootstrap.min.js"></script>
 
