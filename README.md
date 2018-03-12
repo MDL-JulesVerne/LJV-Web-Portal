@@ -13,7 +13,7 @@ This license applies to all files in this repository.
 
 ### LJV.fr Team
 
-Creator, Developer Updateylpand Webmaster: **Matiboux (Mathieu Guérin)**
+Creator, Developer and Webmaster: **Matiboux (Mathieu Guérin)**
  - **Email**: [matiboux@gmail.com](mailto:matiboux@gmail.com)
  - **Telegram**: [@Matiboux](https://t.me/Matiboux)
  - **Github**: [@Matiboux](https://github.com/Matiboux)
