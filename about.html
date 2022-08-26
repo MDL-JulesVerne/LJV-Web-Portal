@@ -1,13 +1,16 @@
+---
+---
+
 <html>
 <head>
 
-<?php include 'head.php'; ?>
+{% include head.html %}
 <title>Portail web - Lycée Jules Verne</title>
 
 </head>
 <body>
 
-<?php include 'header.php'; ?>
+{% include header.html %}
 
 <div id="main">
 	<div class="container text-justify">
@@ -15,18 +18,18 @@
 		<p><b><a href="https://ljv.fr/">ljv.fr</a></b> a été créé d'après une initiative non-officielle d'un groupe de quelques lycéens du lycée Jules Verne. Ce  site internet a été pensé comme un "portail", dans le but de faire le lien entre le site officiel du lycée et ses projets externes, gérés par des lycéens. Ces projets peuvent être hébergés sur la plateforme du site internet et sont liés à l’établissement ou à sa vie lycéenne.</p>
 		<p>L’organisation du domaine « ljv.fr » a été pensée afin d’offrir une certaine visibilité à tous les projets qui lui sont liés, ainsi qu’au site officiel du lycée.</p>
 		<hr />
-		
+
 		<h2>II. Les projets</h2>
 		<p>La plateforme a pour but de permettre l’hébergement de projets de lycéens sur Internet. Pour le moment, la plateforme n’héberge que ce site internet et le journal du lycée « Le Nautilus ».</p>
 		<p>La plateforme est en constant développement et ouverte à toutes suggestions. La plateforme est bien sûr ouverte à de nouveaux projets. Les projets ne sont pas nécessairement sous la responsabilité de l’équipe du site internet, mais devront veiller à respecter les règles légales, d'éthique et d’équité.</p>
 		<hr />
-		
+
 		<h2>III. Une politique Open-Source</h2>
 		<p>Le code source du site internet ljv.fr est entièrement disponible en ligne: vous pouvez le visualiser ou le télécharger depuis <a href="https://github.com/matiboux/LJV-Web-Portal">sa page Github</a>. Le code est distribué sous la <a href="https://fr.wikipedia.org/wiki/Licence_MIT">license MIT</a>.</p>
 		<p>Si vous souhaitez suivre le développement de ce site internet ou y participer, vous pouvez vous abonner à sa page Github ou proposer vos propres modifications. <br />
 		Si vous souhaitez vous investir d'une autre manière ou dans un autre projet, merci de prendre contact avec un membre de l’équipe du projet auquel vous vous intéressez.</p>
 		<hr />
-		
+
 		<h2>IV. Mentions légales</h2>
 		<h3>1. Responsable de la plateforme et du site internet</h3>
 		<p>La plateforme de ce site internet est gérée par Mathieu Guérin (alias « Matiboux »), élève en Terminale au lycée Jules Verne. Ce dernier est également propriétaire du domaine « ljv.fr » et webmaster de ce site internet.</p>
@@ -35,12 +38,12 @@
 			<li>Email : <a href="mailto:matiboux@gmail.com">matiboux@gmail.com</a></li>
 			<li>Telegram : <a href="https://t.me/Matiboux">@Matiboux</a></li>
 		</ul>
-		
+
 		<h3>2. Hébergeur de la plateforme</h3>
-		<p>La plateforme est hébergée chez <b><a href="https://www.dyjix.eu/">Dyjix</a></b>. <br />
-		<i class="text-muted">Adresse : Lieu-dit Mannetot, 14370 Mery-Corbon</i></p>
+		<p>La plateforme est hébergée chez <b><a href="https://pages.github.com/">Github Pages</a></b>. <br />
+		<i class="text-muted">Adresse : 88 Colin P Kelly Jr St, San Francisco, CA 94107, United States</i></p>
 		<hr />
-		
+
 		<h2>V. Conditions d’utilisation</h2>
 		<p>L’équipe gérant ce site internet (ljv.fr) ne peut être tenu pour responsable de l’utilisation que vous en faites ou des problèmes que vous pourrez rencontrer. En utilisant ljv.fr, vous assurez avoir pris connaissance des conditions d’utilisation suivantes :</p>
 		<ul>
@@ -56,7 +59,7 @@
 	</div>
 </div>
 
-<?php include 'footer.php'; ?>
+{% include footer.html %}
 
 <script type="text/javascript" src="https://cdn.matiboux.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="https://cdn.matiboux.com/js/bootstrap.min.js"></script>

@@ -36,7 +36,7 @@ p { font-size: 13px; margin: 5px 0 }
 #items .item .popup.popup-warning { background: rgba(238, 162, 54, .65) } /* Orange */
 #items .item .popup.popup-danger, #items .item .popup.canceled { background: rgba(212, 63, 58, .65) } /* Red */
 
-#items .item .content { position: relative; padding: 10px; top: 50%; left: 50%; float: left; text-align: center; color: #fff; text-shadow: -1px -1px 5px rgba(0, 0, 0, .35), 1px -1px 5px rgba(0, 0, 0, .35), -1px 1px 5px rgba(0, 0, 0, .35), 1px 1px 5px rgba(0, 0, 0, .35); transform: translate(-50%, -50%) }
+#items .item .content { position: absolute; padding: 10px; top: 50%; left: 50%; float: left; text-align: center; color: #fff; text-shadow: -1px -1px 5px rgba(0, 0, 0, .35), 1px -1px 5px rgba(0, 0, 0, .35), -1px 1px 5px rgba(0, 0, 0, .35), 1px 1px 5px rgba(0, 0, 0, .35); transform: translate(-50%, -50%) }
 #items .item .content h1 { font-size: 30px; margin: 5px 0 }
 @media (max-width: 767px) { /* XS */
 	#items .item:not(.big) .content h1 { font-size: 22px }
