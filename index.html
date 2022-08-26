@@ -1,62 +1,64 @@
-<?php
-$countdown = 5; // seconds
-$location = 'http://jules-verne.paysdelaloire.e-lyco.fr/';
-// header('Refresh: ' . $countdown . '; Url=' . $location);
-$cookieName = 'disableRedirect';
-?>
+---
+---
+
+{% capture countdown %}5{% endcapture %}
+{% capture location %}https://jules-verne.paysdelaloire.e-lyco.fr/{% endcapture %}
+{% capture cookieName %}disableRedirect{% endcapture %}
 
 <html>
 <head>
 
-<?php include 'head.php'; ?>
+{% include head.html %}
 <title>Portail web - Lycée Jules Verne</title>
 
 </head>
 <body>
 
-<?php include 'header.php'; ?>
+{% include header.html %}
 
 <div id="items">
 	<div class="container">
 		<div class="list">
 			<div id="redirect" class="item item-text" style="margin-top: -80px">
 				<div class="content">
-					<p>Redirection automatique dans <span id="countdown"><?=$countdown?></span> secondes...</p>
+					<p>Redirection automatique dans <span id="countdown">{{ countdown }}</span> secondes...</p>
 					<p><a href="#" class="btn btn-danger btn-xs"><i class="fa fa-times fa-fw"></i> Désactiver la redirection</a></p>
 				</div>
 			</div>
-			
-			<div class="item redirecting item-lg" href="http://jules-verne.paysdelaloire.e-lyco.fr/" style="background-image: url('https://ljv.fr/blurred-ljv.jpg')">
+
+			<div class="item redirecting item-lg" href="http://jules-verne.paysdelaloire.e-lyco.fr/" style="background-image: url('{{ '/' | relative_url }}blurred-ljv.jpg')">
 				<div id="redirect-status" class="popup ongoing" style="display: none"></div>
 				<div class="content">
 					<h1>Lycée Jules Verne</h1>
 					<p>Le site internet officiel du lycée Jules Verne de Nantes</p>
 				</div>
 			</div>
-			<div class="item" href="https://mdl.ljv.fr/" style="background-image: url('https://ljv.fr/blurred-mdl.jpg')">
+			<div class="item" href="https://mdl.ljv.fr/" style="background-image: url('{{ '/' | relative_url }}blurred-mdl.jpg')">
 				<div class="content">
 					<h1>MDL Jules Verne</h1>
 					<p>Le site de la Maison des Lycéens</p>
 				</div>
 			</div>
-			<div class="item" href="https://nautilus.ljv.fr/" style="background-image: url('https://ljv.fr/blurred-nautilus.jpg')">
+			<div class="item" href="https://nautilus.ljv.fr/" style="background-image: url('{{ '/' | relative_url }}blurred-nautilus.jpg')">
 				<div class="content">
 					<h1>Le Nautilus</h1>
 					<p>Le journal du lycée Jules Verne</p>
 				</div>
 			</div>
-			<?php /*<div class="item" href="#" style="background-image: url('https://ljv.fr/blurred-cloud.jpg')">
+			{% comment %}
+			<div class="item" href="#" style="background-image: url('{{ '/' | relative_url }}blurred-cloud.jpg')">
 				<div class="popup popup-warning">En développement</div>
 				<div class="content">
 					<h1><i class="fa fa-cloud-upload fa-fw"></i> FileDrop</h1>
 					<p>Partagez vos fichiers rapidement en ligne!</p>
 				</div>
-			</div>*/ ?>
+			</div>
+			{% endcomment %}
 		</div>
 	</div>
 </div>
 
-<?php include 'footer.php'; ?>
+{% include footer.html %}
 
 <script type="text/javascript" src="https://cdn.matiboux.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="https://cdn.matiboux.com/js/bootstrap.min.js"></script>
@@ -65,10 +67,10 @@ $cookieName = 'disableRedirect';
 
 <script>
 (function($) {
-	var cookieName = '<?=$cookieName?>';
+	var cookieName = '{{ cookieName }}';
 	var ongoing = false;
 	var countdown = $('#countdown').html();
-	
+
 	var toggleRedirect = function(activate) {
 		if(activate) {
 			ongoing = true;
@@ -79,7 +81,7 @@ $cookieName = 'disableRedirect';
 					$(this).text(e.strftime('%S'));
 					if(e.type == 'finish') {
 						ongoing = false;
-						window.location = '<?=$location?>';
+						window.location = '{{ location }}';
 					}
 				}
 			});
@@ -89,34 +91,34 @@ $cookieName = 'disableRedirect';
 			$('#redirect-status').removeClass('canceled ongoing').empty().text('Redirection auto. désactivée').show();
 		}
 	};
-	
+
 	toggleRedirect(!Cookies.get(cookieName) || Cookies.get(cookieName) < Date.now());
-	
+
 	$(document).ready(function() {
 		$('a').click(function(e) {
 			if($(this).attr('href') == '#' && $(this).parents('#redirect').length) {
 				e.preventDefault();
-				
+
 				if(ongoing && $(this).parents('#redirect').find('#countdown').length) {
 					ongoing = false;
 					$('#redirect .content').empty().append($('<p>').append($('<i>').addClass('fa fa-times fa-fw'), ' Redirection auto. désactivée'));
 					$('#redirect').animate({'margin-top': '-80px'});
 					if($('#redirect-status').hasClass('ongoing')) $('#redirect-status').removeClass('canceled ongoing').addClass('canceled').empty().text('Redirection auto. désactivée');
-					
+
 					Cookies.set(cookieName, Date.now() + 10 *60 *1000);
 				}
 			}
 		});
-		
+
 		$('.item').click(function(e) {
 			if($(this).attr('href') != '' && $(this).attr('href') != '#' && $(this).attr('id') != 'redirect') {
 				e.preventDefault();
-				
+
 				ongoing = false;
 				$('#redirect .content').empty().append($('<p>').append($('<i>').addClass('fa fa-times fa-fw'), ' Redirection auto. interrompue'));
 				$('#redirect').animate({'margin-top': '-80px'});
 				if($('#redirect-status').hasClass('ongoing')) $('#redirect-status').removeClass('canceled ongoing').addClass('canceled').empty().text('Redirection auto. interrompue');
-				
+
 				window.location = $(this).attr('href');
 			}
 		});
